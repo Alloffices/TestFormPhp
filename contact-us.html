@@ -116,24 +116,21 @@
         </div>
 
         <div class="col-md-7">
+        	     <form method="post" action="contactengine.php">
+        <label for="Name">Name:</label>
+        <input type="text" name="Name" id="Name" />
+        
+        <label for="City">City:</label>
+        <input type="text" name="City" id="City" />
+  
+        <label for="Email">Email:</label>
+        <input type="text" name="Email" id="Email" />
+        
+        <label for="Message">Message:</label><br />
+        <textarea name="Message" rows="20" cols="20" id="Message"></textarea>
 
-<form method="post" action="https://announcer-thomas-31137.netlify.com/contact_form.php">
-<label>Name :</label>
-<input class="input" type="text" name="name" value="">
-<span class="error"><?php echo $nameError;?></span>
-<label>Email :</label>
-<input class="input" type="text" name="email" value="">
-<span class="error"><?php echo $emailError;?></span>
-<label>Purpose :</label>
-<input class="input" type="text" name="purpose" value="">
-<span class="error"><?php echo $purposeError;?></span>
-<label>Message :</label>
-<textarea name="message" val=""></textarea>
-<span class="error"><?php echo $messageError;?></span>
-<input class="submit" type="submit" name="submit" value="Submit">
-<span class="success"><?php echo $successMessage;?></span>
-</form>
-
+        <input type="submit" name="submit" value="Submit" class="submit-button" />
+      </form>
         </div>
       </div>
     </div>
