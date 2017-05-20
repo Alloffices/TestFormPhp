@@ -1,0 +1,19 @@
+/*****************************************************
+*** How LeadChat Works CSS ***
+*****************************************************/
+
+#ready-to-buy-r {
+  padding: 150px 0 130px !important;
+}
+
+@media all and (max-width:991px) {
+	#ready-to-buy-r {
+	  padding:150px 0 53px !important;
+	}
+}
+
+@media all and (max-width:667px) {
+	#ready-to-buy-r {
+	  padding:112px 0 53px !important;
+	}
+}
