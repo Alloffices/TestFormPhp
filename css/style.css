@@ -1591,10 +1591,20 @@ h2.banner-h-two {
 
 
 /*****************************************************
-*** How It Works Page ***
+*** Confirmation Page ***
 *****************************************************/
 
-
+.confirmation-check {
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    margin: 0 auto;
+    background: #69BC45;
+    color: #fff;
+    padding-top: 15px;
+    font-size: 86px;
+    margin-bottom: 22px;
+}
 
 
 /*****************************************************

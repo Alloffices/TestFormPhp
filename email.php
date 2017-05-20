@@ -4,8 +4,10 @@
  */
 //SMTP needs accurate times, and the PHP time zone MUST be set
 //This should be done in your php.ini, but this is how to do it if you don't have access to that
-$email = $_REQUEST['email'] ;
-$message = $_REQUEST['message'] ;
+$name    = $_REQUEST['name'];
+$email   = $_REQUEST['email'];
+$message = $_REQUEST['message'];
+$formcontent = "From: $name \n Email: $email \n Message: $message";
 
 date_default_timezone_set('Etc/UTC');
 
@@ -19,9 +21,9 @@ $mail->isSMTP();
 // 0 = off (for production use)
 // 1 = client messages
 // 2 = client and server messages
-$mail->SMTPDebug = 2;
+$mail->SMTPDebug = 0;
 //Ask for HTML-friendly debug output
-$mail->Debugoutput = 'html';
+// $mail->Debugoutput = 'html';
 //Set the hostname of the mail server
 $mail->Host = "vps27438.inmotionhosting.com";  // specify main and backup 
 //Set the SMTP port number - likely to be 25, 465 or 587
@@ -46,16 +48,18 @@ $mail->Subject = "You have received feedback from your website!";
 
 // $mail->msgHTML(file_get_contents('contents.html'), dirname(__FILE__));
 
-$mail->Body    = $message;
+$mail->Body  = $formcontent;
 //Replace the plain text body with one created manually
-$mail->AltBody = $message;
+
+// $mail->AltBody = $formcontent;
 //Attach an image file
 // $mail->addAttachment('images/phpmailer_mini.png');
 //send the message, check for errors
 if (!$mail->send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
 } else {
-    echo "Message sent!";
+    // echo $formcontent;
+    echo '<script>window.location = "http://test.yourdigitalresourcedev.com/thank-you.html"</script>';
 }
 
 ?>
