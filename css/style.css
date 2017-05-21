@@ -655,6 +655,15 @@ input[type="email"]:focus {
 }
 
 
+/*Contact form background*/
+
+#map-feature-contact-form {
+  padding: 0px 0 60px;
+  position: relative;
+  /*overflow: hidden;*/
+}
+
+
 /*Get Information Section*/
 
 #map-feature-get-info {
@@ -1167,7 +1176,8 @@ input[type="email"]:focus {
 #footer {
   color: #8c8f94;
   font-size: 16px;
-  background-color: #eee;
+  background-color: #fff;
+  /*border-top:1px solid #eee;*/
 }
 
 #footer .footer-container {
@@ -1588,6 +1598,104 @@ h2.banner-h-two {
 .get-their-description {
   margin-bottom: 30px;
 }
+
+/*****************************************************
+*** Contact Form ***
+*****************************************************/
+
+.contact-header-txt {
+  color:#fff;
+  font-size:40px;
+}
+
+.contact-header-sub-txt {
+  width:700px;
+  margin:0 auto;
+  color:#fff;
+}
+
+#contact-header {
+  height:600px;
+  width:100%;
+  margin-top:90px;
+  padding-top: 6em;
+}
+
+.bg-contact-page {
+  /*background-color: #000;*/
+  /*background: linear-gradient(182deg, #eee, #ffffff);*/
+}
+.wrapper-form {
+  width: 400px;
+  height: 100%;
+  margin: -300px auto 0 auto;
+  /*border: 1px solid #eee;*/
+  padding: 3em 2em;
+  background:#fff;
+  border-radius:5px;
+  -webkit-box-shadow: 0px 26px 70px -35px rgba(0,0,0,0.47);
+  -moz-box-shadow: 0px 26px 70px -35px rgba(0,0,0,0.47);
+  box-shadow: 0px 26px 70px -35px rgba(0,0,0,0.47);
+}
+.name,
+.email,
+.msg,
+.business,
+.submit-btn,
+.number {
+  width:100%;
+}
+.name,
+.email,
+.business,
+.number {
+  margin-bottom:14px;
+}
+.submit-btn {
+  background:#69BC45;
+  color:#fff;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 12px 16px;
+  border:0;
+  border-radius:100px;
+  -webkit-border-radius: 30px;
+}
+
+h4.contact-form-heading {
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 300;
+  margin: 0 auto 5px;
+}
+.contact-form-post h4.contact-post-txt {
+  font-size: 13px;
+  line-height: 34px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: #aaa;
+}
+
+
+@media all and (max-width:587px) {
+  .contact-header-txt {
+    line-height:45px;
+  }
+  .contact-header-sub-txt {
+    display:none;
+  }
+  #contact-header {
+    height:300px;
+    width:100%;
+    margin-top:50px;
+    padding-top: 3.5em;
+  }
+  .wrapper-form {
+    width: 100%;
+    margin: -90px auto 0 auto;
+  }
+}
+
 
 
 /*****************************************************

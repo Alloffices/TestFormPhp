@@ -122,6 +122,23 @@ $(document).ready(function() {
 	    }
     });
 
+    // $(window).bind('load resize', function(){
+	   //  if ($(window).width() > 667) {
+	   //  	$('#contact-header').css({'background-image'   : 'url("images/rawpixel-com-252127.png")',
+	   //  		       				   'background-position' : 'top center',
+	   //  		       				   'background-size'     : 'cover',
+	   //  		       				   'background-repeat'     : 'no-repeat',
+	   //  		       				   'background-blend-mode'     : 'overlay',
+				// 					   'background-color'     : '#fff',
+	   //  		       				   'background-color'     : 'hsla(360, 100%, 0%, 0.5)'
+	   //  		       					});
+	   //  } else{
+	   //  	$('#contact-header').css({'background-image'   : 'none',
+	   //  								'background-color'     : '#fff'
+	   //  							     });
+	   //  }
+    // });
+
 });
 
 

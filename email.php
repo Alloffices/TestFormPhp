@@ -6,8 +6,10 @@
 //This should be done in your php.ini, but this is how to do it if you don't have access to that
 $name    = $_REQUEST['name'];
 $email   = $_REQUEST['email'];
-$message = $_REQUEST['message'];
-$formcontent = "From: $name \n Email: $email \n Message: $message";
+$business = $_REQUEST['business'];
+$number = $_REQUEST['number'];
+$formcontent = "From: $name \n Email: $email \n Business: $business \n number: $number";
+// \n Message: $message
 
 date_default_timezone_set('Etc/UTC');
 
